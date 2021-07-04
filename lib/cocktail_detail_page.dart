@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:homework/appbar_widget.dart';
+import 'package:homework/ingredients_widget.dart';
 import 'package:homework/models/models.dart';
+
+import 'details_widget.dart';
 
 class CocktailDetailPage extends StatelessWidget {
   const CocktailDetailPage(
@@ -17,9 +20,9 @@ class CocktailDetailPage extends StatelessWidget {
     /// https://www.figma.com/file/d2JJUBFu7Dg0HOV30XG7Z4/OTUS-FLUTTER.-%D0%A3%D1%80%D0%BE%D0%BA-3-%D0%94%D0%97?node-id=23%3A85
     /// для того чтобы весь контент поместился, необходимо использовать SingleChildScrollView()
     return Scaffold(
-      backgroundColor: Color(0xFF1A1927),
+      backgroundColor: const Color(0xFF1A1927),
       extendBodyBehindAppBar: true,
-      appBar: AppbarWidget(),
+      appBar: const AppbarWidget(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -28,24 +31,8 @@ class CocktailDetailPage extends StatelessWidget {
               'assets/images/cocktail_01.png',
               fit: BoxFit.fill,
             ),
-            Column(
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      cocktail.name,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'SF-Pro',
-                        fontWeight: FontWeight.w500,
-                        fontSize: 20.0,
-                        height: 1.19,
-                      ),
-                    ),
-                  ],
-                )
-              ],
-            )
+            DetailsWidget(cocktail: cocktail),
+            IngredientsWidget(cocktail: cocktail),
           ],
         ),
       ),

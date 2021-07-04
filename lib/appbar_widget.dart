@@ -7,6 +7,7 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      elevation: 0.0,
       backgroundColor: Colors.transparent,
       leading: IconButton(
         onPressed: () {},
@@ -22,5 +23,5 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(100.0);
+  Size get preferredSize => const Size.fromHeight(40.0);
 }
