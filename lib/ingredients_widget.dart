@@ -19,7 +19,7 @@ class IngredientsWidget extends StatelessWidget {
       child: Column(
         children: [
           const Text(
-            'Ингридиенты:',
+            'Ингредиенты:',
             style: AppTextStyles.ingredientsTitle,
           ),
           Expanded(
@@ -42,13 +42,6 @@ class IngredientsWidget extends StatelessWidget {
                       ],
                     ),
                   );
-                  // return ListTile(
-                  //   tileColor: Colors.red,
-                  //   title: Text(
-                  //     cocktail.ingredients.elementAt(index).ingredientName,
-                  //     style: AppTextStyles.ingredientName,
-                  //   ),
-                  // );
                 }),
           )
         ],

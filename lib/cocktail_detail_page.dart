@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:homework/appbar_widget.dart';
 import 'package:homework/ingredients_widget.dart';
+import 'package:homework/instruction_widget.dart';
 import 'package:homework/models/models.dart';
 
 import 'details_widget.dart';
@@ -15,10 +16,6 @@ class CocktailDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    /// Сделать верстку экрана "Карточка коктейля" по модели Cocktail cocktail
-    /// Ссылка на макет
-    /// https://www.figma.com/file/d2JJUBFu7Dg0HOV30XG7Z4/OTUS-FLUTTER.-%D0%A3%D1%80%D0%BE%D0%BA-3-%D0%94%D0%97?node-id=23%3A85
-    /// для того чтобы весь контент поместился, необходимо использовать SingleChildScrollView()
     return Scaffold(
       backgroundColor: const Color(0xFF1A1927),
       extendBodyBehindAppBar: true,
@@ -33,9 +30,16 @@ class CocktailDetailPage extends StatelessWidget {
             ),
             DetailsWidget(cocktail: cocktail),
             IngredientsWidget(cocktail: cocktail),
+            InstructionWidget(cocktail: cocktail),
           ],
         ),
       ),
     );
   }
 }
+
+
+/// Сделать верстку экрана "Карточка коктейля" по модели Cocktail cocktail
+/// Ссылка на макет
+/// https://www.figma.com/file/d2JJUBFu7Dg0HOV30XG7Z4/OTUS-FLUTTER.-%D0%A3%D1%80%D0%BE%D0%BA-3-%D0%94%D0%97?node-id=23%3A85
+/// для того чтобы весь контент поместился, необходимо использовать SingleChildScrollView()
