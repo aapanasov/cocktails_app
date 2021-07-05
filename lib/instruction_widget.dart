@@ -17,6 +17,7 @@ class InstructionWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 32.0),
       height: 273.0,
+      color: Color(0xFF201F2C),
       clipBehavior: Clip.none,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
