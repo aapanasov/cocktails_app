@@ -46,7 +46,7 @@ class AppTextStyles {
     decoration: TextDecoration.underline,
     fontWeight: FontWeight.w400,
     fontSize: 14.0,
-    height: 1.19,
+    height: 1.1,
   );
 
   static const ingredientMeasure = TextStyle(
@@ -54,6 +54,6 @@ class AppTextStyles {
     fontFamily: 'SF-Pro',
     fontWeight: FontWeight.w500,
     fontSize: 14.0,
-    height: 1.19,
+    height: 1.1,
   );
 }

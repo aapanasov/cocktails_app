@@ -14,9 +14,12 @@ class InstructionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 32.0),
       height: 273.0,
+      width: screenSize.width * 0.75,
+      clipBehavior: Clip.none,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -24,18 +27,24 @@ class InstructionWidget extends StatelessWidget {
             'Инструкция для приготовления',
             style: AppTextStyles.detailsSubtitle,
           ),
-          const SizedBox(height: 8.0),
+          const SizedBox(height: 24.0),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const CircleAvatar(
-                radius: 2.0,
-                backgroundColor: Colors.white,
+              Padding(
+                padding: const EdgeInsets.only(top: 6.0),
+                child: const CircleAvatar(
+                  radius: 2.0,
+                  backgroundColor: Colors.white,
+                ),
               ),
               SizedBox(width: 8.0),
-              Text(
-                '''В большом бокале смешайте порванные листья мяты, разрезанный на кусочки лайм и сахар. Толкушкой хорошо раздавите, чтобы лайм пустил сок.''',
-                style: AppTextStyles.detailsSubtitle,
-                softWrap: true,
+              Container(
+                // width: screenSize.width * 0.75,
+                child: Text(
+                  '''В большом бокале смешайте порванные листья мяты, разрезанный на кусочки лайм и сахар. Толкушкой хорошо раздавите, чтобы лайм пустил сок.''',
+                  style: AppTextStyles.detailsSubtitle,
+                ),
               ),
             ],
           ),

@@ -13,7 +13,12 @@ class IngredientsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 32.0),
+      padding: const EdgeInsets.only(
+        top: 24.0,
+        left: 32.0,
+        right: 32.0,
+        bottom: 8.0,
+      ),
       color: Colors.black,
       height: 273.0,
       child: Column(
@@ -24,6 +29,7 @@ class IngredientsWidget extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
+                padding: EdgeInsets.only(top: 24.0),
                 itemCount: cocktail.ingredients.length,
                 itemBuilder: (context, index) {
                   return Padding(
