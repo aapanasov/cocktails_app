@@ -3,6 +3,7 @@ import 'package:homework/appbar_widget.dart';
 import 'package:homework/ingredients_widget.dart';
 import 'package:homework/instruction_widget.dart';
 import 'package:homework/models/models.dart';
+import 'package:homework/rating_widget.dart';
 
 import 'details_widget.dart';
 
@@ -31,6 +32,7 @@ class CocktailDetailPage extends StatelessWidget {
             DetailsWidget(cocktail: cocktail),
             IngredientsWidget(cocktail: cocktail),
             InstructionWidget(cocktail: cocktail),
+            RatingWidget(),
           ],
         ),
       ),

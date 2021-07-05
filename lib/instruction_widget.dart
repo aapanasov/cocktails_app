@@ -14,11 +14,9 @@ class InstructionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenSize = MediaQuery.of(context).size;
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 32.0),
       height: 273.0,
-      width: screenSize.width * 0.75,
       clipBehavior: Clip.none,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,26 +25,54 @@ class InstructionWidget extends StatelessWidget {
             'Инструкция для приготовления',
             style: AppTextStyles.detailsSubtitle,
           ),
-          const SizedBox(height: 24.0),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 6.0),
-                child: const CircleAvatar(
-                  radius: 2.0,
-                  backgroundColor: Colors.white,
-                ),
-              ),
-              SizedBox(width: 8.0),
-              Container(
-                // width: screenSize.width * 0.75,
-                child: Text(
-                  '''В большом бокале смешайте порванные листья мяты, разрезанный на кусочки лайм и сахар. Толкушкой хорошо раздавите, чтобы лайм пустил сок.''',
-                  style: AppTextStyles.detailsSubtitle,
-                ),
-              ),
-            ],
+          const SizedBox(height: 16.0),
+          Indent(
+            indentText: 'В большом бокале смешайте порванные листья мяты, '
+                'разрезанный на кусочки лайм и сахар. Толкушкой хорошо '
+                'раздавите, чтобы лайм пустил сок.',
+          ),
+          Indent(
+            indentText: 'Добавьте мелко нарезанную кубиками мякоть '
+                'арбуза и снова слегка растолките.',
+          ),
+          Indent(
+            indentText: 'Добавьте ром и лед. Перемешайте и разлейте '
+                'по бокалам. Сразу подавайте.',
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Indent extends StatelessWidget {
+  const Indent({
+    Key key,
+    @required this.indentText,
+  }) : super(key: key);
+
+  final String indentText;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 8.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 6.0),
+            child: const CircleAvatar(
+              radius: 2.0,
+              backgroundColor: Colors.white,
+            ),
+          ),
+          SizedBox(width: 8.0),
+          Expanded(
+            child: Text(
+              indentText,
+              style: AppTextStyles.detailsSubtitle,
+            ),
           ),
         ],
       ),
