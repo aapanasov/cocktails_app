@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:homework/models/models.dart';
 
-import 'package:homework/widgets/appbar_widget.dart';
-import 'package:homework/widgets/details_widget.dart';
-import 'package:homework/widgets/ingredients_widget.dart';
-import 'package:homework/widgets/instruction_widget.dart';
-import 'package:homework/widgets/rating_widget.dart';
+import 'package:homework/widgets/detail_appbar.dart';
+import 'package:homework/widgets/cocktail_image.dart';
+import 'package:homework/widgets/details.dart';
+import 'package:homework/widgets/ingredients.dart';
+import 'package:homework/widgets/instruction.dart';
+import 'package:homework/widgets/rating.dart';
 
 class CocktailDetailPage extends StatelessWidget {
   const CocktailDetailPage(
@@ -21,32 +22,23 @@ class CocktailDetailPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF1A1927),
       extendBodyBehindAppBar: true,
-      appBar: const AppbarWidget(),
+      appBar: const DetailAppbar(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Image.asset(
-            //   'assets/images/cocktail_01.png',
-            //   fit: BoxFit.fill,
-            // ),
-            Container(
-              height: 343.0,
-              child: Image.network(
-                cocktail.drinkThumbUrl,
-                fit: BoxFit.fitWidth,
-              ),
-            ),
-            DetailsWidget(cocktail: cocktail),
-            IngredientsWidget(cocktail: cocktail),
-            InstructionWidget(cocktail: cocktail),
-            const RatingWidget(),
+            CocktailImage(cocktail: cocktail),
+            Details(cocktail: cocktail),
+            Ingredients(cocktail: cocktail),
+            Instruction(cocktail: cocktail),
+            const Rating(),
           ],
         ),
       ),
     );
   }
 }
+
 
 
 /// Сделать верстку экрана "Карточка коктейля" по модели Cocktail cocktail
