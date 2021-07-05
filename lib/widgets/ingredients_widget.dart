@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:homework/models/src/model/cocktail.dart';
 import 'package:homework/styles/app_text_styles.dart';
-import 'models/models.dart';
 
 class IngredientsWidget extends StatelessWidget {
   const IngredientsWidget({
@@ -29,7 +29,7 @@ class IngredientsWidget extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
-                padding: EdgeInsets.only(top: 24.0),
+                padding: const EdgeInsets.only(top: 24.0),
                 itemCount: cocktail.ingredients.length,
                 itemBuilder: (context, index) {
                   return Padding(

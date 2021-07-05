@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:homework/models/models.dart';
 import 'package:homework/styles/app_text_styles.dart';
-
-import 'models/models.dart';
 
 class DetailsWidget extends StatelessWidget {
   const DetailsWidget({
@@ -14,7 +13,8 @@ class DetailsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
+      height: 322.0,
       padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,7 +64,7 @@ class DetailColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.symmetric(vertical: 9.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

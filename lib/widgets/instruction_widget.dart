@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'models/models.dart';
-import 'styles/app_text_styles.dart';
+import 'package:homework/models/src/model/cocktail.dart';
+import 'package:homework/styles/app_text_styles.dart';
 
 class InstructionWidget extends StatelessWidget {
   const InstructionWidget({
@@ -17,7 +16,7 @@ class InstructionWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 32.0),
       height: 273.0,
-      color: Color(0xFF201F2C),
+      color: const Color(0xFF201F2C),
       clipBehavior: Clip.none,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,16 +26,16 @@ class InstructionWidget extends StatelessWidget {
             style: AppTextStyles.detailsSubtitle,
           ),
           const SizedBox(height: 16.0),
-          Indent(
+          const Indent(
             indentText: 'В большом бокале смешайте порванные листья мяты, '
                 'разрезанный на кусочки лайм и сахар. Толкушкой хорошо '
                 'раздавите, чтобы лайм пустил сок.',
           ),
-          Indent(
+          const Indent(
             indentText: 'Добавьте мелко нарезанную кубиками мякоть '
                 'арбуза и снова слегка растолките.',
           ),
-          Indent(
+          const Indent(
             indentText: 'Добавьте ром и лед. Перемешайте и разлейте '
                 'по бокалам. Сразу подавайте.',
           ),
@@ -57,18 +56,18 @@ class Indent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8.0),
+      margin: const EdgeInsets.symmetric(vertical: 8.0),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 6.0),
-            child: const CircleAvatar(
+          const Padding(
+            padding: EdgeInsets.only(top: 6.0),
+            child: CircleAvatar(
               radius: 2.0,
               backgroundColor: Colors.white,
             ),
           ),
-          SizedBox(width: 8.0),
+          const SizedBox(width: 8.0),
           Expanded(
             child: Text(
               indentText,

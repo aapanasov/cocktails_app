@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:homework/appbar_widget.dart';
-import 'package:homework/ingredients_widget.dart';
-import 'package:homework/instruction_widget.dart';
-import 'package:homework/models/models.dart';
-import 'package:homework/rating_widget.dart';
 
-import 'details_widget.dart';
+import 'package:homework/models/models.dart';
+
+import 'package:homework/widgets/appbar_widget.dart';
+import 'package:homework/widgets/details_widget.dart';
+import 'package:homework/widgets/ingredients_widget.dart';
+import 'package:homework/widgets/instruction_widget.dart';
+import 'package:homework/widgets/rating_widget.dart';
 
 class CocktailDetailPage extends StatelessWidget {
   const CocktailDetailPage(
@@ -25,14 +26,21 @@ class CocktailDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.asset(
-              'assets/images/cocktail_01.png',
-              fit: BoxFit.fill,
+            // Image.asset(
+            //   'assets/images/cocktail_01.png',
+            //   fit: BoxFit.fill,
+            // ),
+            Container(
+              height: 343.0,
+              child: Image.network(
+                cocktail.drinkThumbUrl,
+                fit: BoxFit.fitWidth,
+              ),
             ),
             DetailsWidget(cocktail: cocktail),
             IngredientsWidget(cocktail: cocktail),
             InstructionWidget(cocktail: cocktail),
-            RatingWidget(),
+            const RatingWidget(),
           ],
         ),
       ),
