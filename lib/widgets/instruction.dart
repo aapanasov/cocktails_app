@@ -14,25 +14,24 @@ class Instruction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 32.0),
-      height: 273.0,
+      padding: const EdgeInsets.symmetric(
+        vertical: 24.0,
+        horizontal: 32.0,
+      ),
       color: const Color(0xFF201F2C),
-      clipBehavior: Clip.none,
-      child: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              'Инструкция для приготовления',
-              style: AppTextTheme.body2,
-            ),
-            const SizedBox(height: 16.0),
-            Text(
-              cocktail.instruction,
-              style: AppTextTheme.body2,
-            ),
-          ],
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Инструкция для приготовления',
+            style: AppTextTheme.body2,
+          ),
+          const SizedBox(height: 16.0),
+          Text(
+            cocktail.instruction,
+            style: AppTextTheme.body2,
+          ),
+        ],
       ),
     );
   }

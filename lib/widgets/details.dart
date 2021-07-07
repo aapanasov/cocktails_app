@@ -14,18 +14,28 @@ class Details extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 322.0,
       padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(cocktail.name, style: AppTextTheme.headline6),
-              IconButton(
-                onPressed: () {},
-                icon: SvgPicture.asset('assets/images/icon_hart.svg'),
+              Flexible(
+                flex: 5,
+                child: Text(
+                  cocktail.name,
+                  style: AppTextTheme.headline6,
+                ),
+              ),
+              Flexible(
+                child: IconButton(
+                  onPressed: () {},
+                  icon: SvgPicture.asset(
+                    'assets/images/icon_hart.svg',
+                  ),
+                ),
               )
             ],
           ),
@@ -56,8 +66,8 @@ class DetailColumn extends StatelessWidget {
     @required this.value,
   }) : super(key: key);
 
-  final String value;
   final String title;
+  final String value;
 
   @override
   Widget build(BuildContext context) {

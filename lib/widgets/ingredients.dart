@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:homework/models/src/model/cocktail.dart';
+import 'package:homework/models/models.dart';
+
 import 'package:homework/themes/app_text_theme.dart';
 
 class Ingredients extends StatelessWidget {
@@ -13,15 +14,13 @@ class Ingredients extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(
-        top: 24.0,
-        left: 32.0,
-        right: 32.0,
-        bottom: 8.0,
+      padding: const EdgeInsets.symmetric(
+        vertical: 24.0,
+        horizontal: 32.0,
       ),
       color: Colors.black,
-      height: 273.0,
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Text(
             'Ингредиенты:',
@@ -29,33 +28,46 @@ class Ingredients extends StatelessWidget {
               color: const Color(0xFFB1AFC6),
             ),
           ),
-          Expanded(
-            child: ListView.builder(
-                padding: const EdgeInsets.only(top: 24.0),
-                itemCount: cocktail.ingredients.length,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          cocktail.ingredients.elementAt(index).ingredientName,
-                          style: AppTextTheme.body2.copyWith(
-                            decoration: TextDecoration.underline,
-                          ),
-                        ),
-                        Text(
-                          cocktail.ingredients.elementAt(index).measure,
-                          style: AppTextTheme.body2.copyWith(
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
-                }),
-          )
+          ...cocktail.ingredients
+              .map((element) => IngredientItem(ingredient: element)),
+        ],
+      ),
+    );
+  }
+}
+
+class IngredientItem extends StatelessWidget {
+  const IngredientItem({
+    Key key,
+    @required this.ingredient,
+  }) : super(key: key);
+
+  final IngredientDefinition ingredient;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              ingredient.ingredientName,
+              style: AppTextTheme.body2.copyWith(
+                decoration: TextDecoration.underline,
+              ),
+            ),
+          ),
+          Flexible(
+            child: Text(
+              ingredient.measure,
+              style: AppTextTheme.body2.copyWith(
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
         ],
       ),
     );
