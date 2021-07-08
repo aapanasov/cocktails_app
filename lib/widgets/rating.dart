@@ -8,7 +8,7 @@ class Rating extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 36.0, vertical: 24.0),
+      padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 24.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -33,13 +33,20 @@ class RatingStar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(
-      radius: 24,
-      backgroundColor: const Color(0xFF2A293A),
-      child: Icon(
-        Icons.star_rate,
-        size: 36.0,
-        color: color,
+    return Flexible(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 2.0),
+        child: CircleAvatar(
+          radius: 24,
+          backgroundColor: const Color(0xFF2A293A),
+          child: FittedBox(
+            child: Icon(
+              Icons.star_rate,
+              size: 32.0,
+              color: color,
+            ),
+          ),
+        ),
       ),
     );
   }
