@@ -11,12 +11,12 @@ class Rating extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 24.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          const RatingStar(color: Colors.white),
-          const RatingStar(color: Colors.white),
-          const RatingStar(color: Colors.white),
-          const RatingStar(color: Color(0xFF1A1927)),
-          const RatingStar(color: Color(0xFF1A1927)),
+        children: const [
+          RatingStar(color: Colors.white),
+          RatingStar(color: Colors.white),
+          RatingStar(color: Colors.white),
+          RatingStar(color: Color(0xFF1A1927)),
+          RatingStar(color: Color(0xFF1A1927)),
         ],
       ),
     );
