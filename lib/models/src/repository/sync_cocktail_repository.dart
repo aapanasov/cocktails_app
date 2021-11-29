@@ -944,7 +944,7 @@ Garnish with a Lime wheel or some cranberries
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.cocktailGlass,
             instruction: '''
-                      Mix both the vermouth\'s in a shaker and strain into a cold glass. Top up with a squirt of Soda Water. 
+                      Mix both the vermouth's in a shaker and strain into a cold glass. Top up with a squirt of Soda Water. 
                     ''',
             isFavourite: true,
             name: 'Addington',
@@ -1093,7 +1093,7 @@ Garnish with a Lime wheel or some cranberries
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.shotGlass,
             instruction: '''
-                      1. Pour Kahlua into shot glass to about 1/2 full. 2. Using a spoon(inverted), slowly pour in the Peppermint Schnapps until glass is about 3/4 full. Done correctly, the Schnapps will flow under the Kahlua for a clear layer. 3. Again using a spoon, but this time right side up, slowly top off the glass with a layer of Bailey\'s. Be careful to place the spoon right at the top of the Kahlua layer and to raise it as the glass fills up. Done correctly, this will provide a layer of Bailey\'s floating over the Kahlua. 4. Toss it down all at once for something like a Peppermint Pattie, WITH A BANG!!! NOTE: Best if all ingredients are chilled
+                      1. Pour Kahlua into shot glass to about 1/2 full. 2. Using a spoon(inverted), slowly pour in the Peppermint Schnapps until glass is about 3/4 full. Done correctly, the Schnapps will flow under the Kahlua for a clear layer. 3. Again using a spoon, but this time right side up, slowly top off the glass with a layer of Bailey's. Be careful to place the spoon right at the top of the Kahlua layer and to raise it as the glass fills up. Done correctly, this will provide a layer of Bailey's floating over the Kahlua. 4. Toss it down all at once for something like a Peppermint Pattie, WITH A BANG!!! NOTE: Best if all ingredients are chilled
                     ''',
             isFavourite: true,
             name: 'After Five',
@@ -1572,7 +1572,7 @@ Garnish with a Lime wheel or some cranberries
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.collinsGlass,
             instruction: '''
-                      Shake ingredients in bartender\'s mixer quickly, just 5 shakes. Strain out ice, serve in glass immediately with a slice of orange.
+                      Shake ingredients in bartender's mixer quickly, just 5 shakes. Strain out ice, serve in glass immediately with a slice of orange.
                     ''',
             isFavourite: true,
             name: 'Amaretto Sunset',
@@ -2354,7 +2354,7 @@ Mix it all together and pour over a bunch of ice. Drink with a straw.
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.collinsGlass,
             instruction: '''
-                      Blend ingredients for 30 seconds. Definitely refreshing for a hot summer\'s day !
+                      Blend ingredients for 30 seconds. Definitely refreshing for a hot summer's day !
                     ''',
             isFavourite: true,
             name: 'Bailey\'s Dream Shake',
@@ -3220,7 +3220,7 @@ Gently stir to combine, top with a gently squeezed lime wedge and finish with a 
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.punchBowl,
             instruction: '''
-                      Mix all ingredients together. Slowly and gently. Works best if ice is added to punch bowl and soda\'s are very cold.
+                      Mix all ingredients together. Slowly and gently. Works best if ice is added to punch bowl and soda's are very cold.
                     ''',
             isFavourite: true,
             name: 'Brain Fart',
@@ -3278,7 +3278,7 @@ Gently stir to combine, top with a gently squeezed lime wedge and finish with a 
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.beerMug,
             instruction: '''
-                      Scoop two large scoops of vanilla ice-cream into frosted beer mug. Next, add 2 ounces Maker\'s Mark. Then, pour in coke. Gently stir and enjoy.
+                      Scoop two large scoops of vanilla ice-cream into frosted beer mug. Next, add 2 ounces Maker's Mark. Then, pour in coke. Gently stir and enjoy.
                     ''',
             isFavourite: true,
             name: 'Brandon and Will\'s Coke Float',
@@ -3451,7 +3451,7 @@ Gently stir to combine, top with a gently squeezed lime wedge and finish with a 
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.shotGlass,
             instruction: '''
-                      In a regular-sized shot glass, layer, with a spoon or cherry, the grenadine , the Kahlua , then the Bailey\'s Irish cream in equal portions. It goes down really smooth ,and you don\'t even need a chaser. It tastes just like chocolate milk.(Really!)
+                      In a regular-sized shot glass, layer, with a spoon or cherry, the grenadine , the Kahlua , then the Bailey's Irish cream in equal portions. It goes down really smooth ,and you don't even need a chaser. It tastes just like chocolate milk.(Really!)
                     ''',
             isFavourite: true,
             name: 'Bruce\'s Puce',
@@ -3524,7 +3524,7 @@ Gently stir to combine, top with a gently squeezed lime wedge and finish with a 
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.shotGlass,
             instruction: '''
-                      This is a layered shot. First pour the Bailey\'s into the shot glass. Then take an upside down spoon and touch it to the inside wall of the glass. Carefully add the Kahlua. Repeat this process for the Sambuca. If done properly, the alcohol will stay separated and resemble a bumble bee. Enjoy!!!
+                      This is a layered shot. First pour the Bailey's into the shot glass. Then take an upside down spoon and touch it to the inside wall of the glass. Carefully add the Kahlua. Repeat this process for the Sambuca. If done properly, the alcohol will stay separated and resemble a bumble bee. Enjoy!!!
                     ''',
             isFavourite: true,
             name: 'Bumble Bee #1',
@@ -3598,7 +3598,7 @@ Gently stir to combine, top with a gently squeezed lime wedge and finish with a 
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.collinsGlass,
             instruction: '''
-                      Same as Caipirinha but instead of cachaca you add WHITE RUM. It\'s great!!!!!!!!
+                      Same as Caipirinha but instead of cachaca you add WHITE RUM. It's great!!!!!!!!
                     ''',
             isFavourite: true,
             name: 'Caipirissima',
@@ -4397,7 +4397,7 @@ A dirty Martini contains a splash of olive brine or olive juice and is typically
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.shotGlass,
             instruction: '''
-                      This is a layered shot - the Bailey\'s must be on top
+                      This is a layered shot - the Bailey's must be on top
                     ''',
             isFavourite: true,
             name: 'Dirty Nipple',
@@ -4688,7 +4688,7 @@ Garnish with 5 drops habanero tincture.
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.cocktailGlass,
             instruction: '''
-                      Pour the Sambuca and Kahlua into the Cocktail Glass and give the drinker a straw. Pour the Baileys and Blue Curacao into two sepsrate shot glasses either side of the cocktail glass. Set light the concotion in the cocktail glass and start to drink through the straw (this drink should be drunk in one) , as the bottom of the glass is reached put out the fire by pouring the Baileys and Blue Curacao into the cocktail glass and keep drinking till it\'s all gone!!
+                      Pour the Sambuca and Kahlua into the Cocktail Glass and give the drinker a straw. Pour the Baileys and Blue Curacao into two sepsrate shot glasses either side of the cocktail glass. Set light the concotion in the cocktail glass and start to drink through the straw (this drink should be drunk in one) , as the bottom of the glass is reached put out the fire by pouring the Baileys and Blue Curacao into the cocktail glass and keep drinking till it's all gone!!
                     ''',
             isFavourite: true,
             name: 'Flaming Lamborghini',
@@ -5575,7 +5575,7 @@ When you’re ready to serve, pour the juice into a jug. Serve in glass bottles 
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.highballGlass,
             instruction: '''
-                      Pour Captain Morgan\'s Spiced Rum over ice, fill glass to top with Ginger Ale. Garnish with lime. Tastes like a cream soda. Named for the Gilligan\'s Island reference ("The Captain" *in* "Ginger" is a Happy Skipper!)
+                      Pour Captain Morgan's Spiced Rum over ice, fill glass to top with Ginger Ale. Garnish with lime. Tastes like a cream soda. Named for the Gilligan's Island reference ("The Captain" *in* "Ginger" is a Happy Skipper!)
                     ''',
             isFavourite: true,
             name: 'Happy Skipper',
@@ -6157,7 +6157,7 @@ When you’re ready to serve, pour the juice into a jug. Serve in glass bottles 
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.cocktailGlass,
             instruction: '''
-                      Wet glass, dip rim in sugar. Then add Ice. Then add everything else. It\'s that simple!
+                      Wet glass, dip rim in sugar. Then add Ice. Then add everything else. It's that simple!
                     ''',
             isFavourite: true,
             name: 'Jitterbug',
@@ -7298,7 +7298,7 @@ Garnish with Cucumer and Lime slice
             glassType: GlassType.masonJar,
             instruction: '''
                       Just mix it all together.
-It\'s meant to be a shot, but it works just fine as a proper adult-sized drink over lots of ice.
+It's meant to be a shot, but it works just fine as a proper adult-sized drink over lots of ice.
 
 Tastes like an oatmeal cookie.
                     ''',
@@ -7436,7 +7436,7 @@ Garnish with orange twist, and a cocktail cherry.
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.collinsGlass,
             instruction: '''
-                      Blend Vodka, Kahlua, Bailey\'s, ice-cream and the Oreo well in a blender. Pour into a large frosted glass. Garnish with whipped cream and a cherry.
+                      Blend Vodka, Kahlua, Bailey's, ice-cream and the Oreo well in a blender. Pour into a large frosted glass. Garnish with whipped cream and a cherry.
                     ''',
             isFavourite: true,
             name: 'Oreo Mudslide',
@@ -7962,7 +7962,7 @@ Garnish with fresh pineapple or lime.
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.shotGlass,
             instruction: '''
-                      In a shot glass add 1/3 Kahlua first. Then 1/3 Miduri, topping it off with a 1/3 bailey\'s irish cream
+                      In a shot glass add 1/3 Kahlua first. Then 1/3 Miduri, topping it off with a 1/3 bailey's irish cream
                     ''',
             isFavourite: true,
             name: 'Quick F**K',
@@ -8440,7 +8440,7 @@ Garnish with fresh pineapple or lime.
             glassType: GlassType.cocktailGlass,
             instruction: '''
                       Add ice, toffee gin, chocolate liqueur and Amaretto to a cocktail shaker and shake vigorously.
-Pour the chocolate syrup into a saucer and dip the top of a martini glass into the sauce. Grate some of the Willie\'s sea salt chocolate into another saucer and dip the coated glass, so the flakes stick to the sauce, creating a chocolate rim!
+Pour the chocolate syrup into a saucer and dip the top of a martini glass into the sauce. Grate some of the Willie's sea salt chocolate into another saucer and dip the coated glass, so the flakes stick to the sauce, creating a chocolate rim!
 Pour the contents of the shaker into your chocolatey glass and sprinkle with more grated chocolate - enjoy!
                     ''',
             isFavourite: true,
@@ -8640,7 +8640,7 @@ Pour the contents of the shaker into your chocolatey glass and sprinkle with mor
             cocktailType: CocktailType.alcoholic,
             glassType: GlassType.cocktailGlass,
             instruction: '''
-                      Pour first vodka, then Bailey\'s, then Kahlua into a cocktail glass over crushed ice. Stir. Caution: use only high quality vodka. Cheap vodka can cause the Bailey\'s to curdle. Test your brand of vodka by mixing 1 Tsp each of vodka and Bailey\'s first.
+                      Pour first vodka, then Bailey's, then Kahlua into a cocktail glass over crushed ice. Stir. Caution: use only high quality vodka. Cheap vodka can cause the Bailey's to curdle. Test your brand of vodka by mixing 1 Tsp each of vodka and Bailey's first.
                     ''',
             isFavourite: true,
             name: 'Screaming Orgasm',
@@ -11042,7 +11042,7 @@ Then add 1 part of the syrup and 2 parts of fresh grapefruit juice together.
             cocktailType: CocktailType.nonAlcoholic,
             glassType: GlassType.coffeeMug,
             instruction: '''
-                      Bring 2 cups of water to boil. Add all the ingredients and boil again for about 15 seconds. Let stand for a minute. Warm milk in a pot. Filter tea into cups. Add milk and sugar. That\'s IT.
+                      Bring 2 cups of water to boil. Add all the ingredients and boil again for about 15 seconds. Let stand for a minute. Warm milk in a pot. Filter tea into cups. Add milk and sugar. That's IT.
                     ''',
             isFavourite: true,
             name: 'Masala Chai',
@@ -11330,7 +11330,7 @@ Then add 1 part of the syrup and 2 parts of fresh grapefruit juice together.
             cocktailType: CocktailType.nonAlcoholic,
             glassType: GlassType.highballGlass,
             instruction: '''
-                      Place the coffee and spices in the filter cone of your coffee maker. Brew coffee as usual, let it cool. In a tall glass, dissolve 1 or 2 teaspoons of sugar in an ounce of the coffee (it\'s easier to dissolve than if you put it right over ice). Add 5-6 ice cubes and pour coffee to within about 1 inch of the top of the glass. Rest a spoon on top of the coffee and slowly pour whipping cream into the spoon. This will make the cream float on top of the coffee rather than dispersing into it right away.
+                      Place the coffee and spices in the filter cone of your coffee maker. Brew coffee as usual, let it cool. In a tall glass, dissolve 1 or 2 teaspoons of sugar in an ounce of the coffee (it's easier to dissolve than if you put it right over ice). Add 5-6 ice cubes and pour coffee to within about 1 inch of the top of the glass. Rest a spoon on top of the coffee and slowly pour whipping cream into the spoon. This will make the cream float on top of the coffee rather than dispersing into it right away.
                     ''',
             isFavourite: true,
             name: 'Thai Coffee',

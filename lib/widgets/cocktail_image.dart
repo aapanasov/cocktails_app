@@ -11,7 +11,7 @@ class CocktailImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 343.0,
       child: Image.network(
         cocktail.drinkThumbUrl,
